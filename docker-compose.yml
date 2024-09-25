@@ -1,0 +1,32 @@
+version: '3.9'
+
+services:
+  # db:
+  #   image: postgres:14
+  #   restart: always
+  #   env_file:
+  #     - .env
+  #   volumes:
+  #     - postgres_data:/var/lib/postgresql/data
+  #   networks:
+  #     - django_network
+
+  web:
+    build: .
+    command: python picokart/manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    # depends_on:
+    #   - db
+    networks:
+      - django_network
+
+# volumes:
+#   postgres_data:
+
+networks:
+  django_network:
