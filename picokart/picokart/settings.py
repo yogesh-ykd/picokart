@@ -28,10 +28,10 @@ SECRET_KEY = os.getenv("DJANGO_SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# ALLOWED_HOSTS = ['picokart.onrender.com', 'picokart-production.up.railway.app', 'localhost', '127.0.0.1']
-# CSRF_TRUSTED_ORIGINS = ['https://picokart.onrender.com']
-ALLOWED_HOSTS = ["*"]
-CSRF_TRUSTED_ORIGINS = ["*"]
+ALLOWED_HOSTS = ['picokart.onrender.com', 'picokart-production.up.railway.app', 'localhost', '127.0.0.1']
+CSRF_TRUSTED_ORIGINS = ['https://picokart.onrender.com', 'https://picokart-production.up.railway.app']
+# ALLOWED_HOSTS = ["*"]
+# CSRF_TRUSTED_ORIGINS = ["*"]
 
 
 # Application definition
