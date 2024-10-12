@@ -25,8 +25,6 @@ COPY . /app/
 # Expose the port Django will run on
 EXPOSE 8000
 
-# # Run Django management commands for migrations and collectstatic
-RUN python picokart/manage.py migrate --noinput
 RUN python picokart/manage.py collectstatic --noinput
 
 # Command to run Django's development server
