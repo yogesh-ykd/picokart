@@ -28,7 +28,7 @@ EXPOSE 8000
 # Run Django management commands for migrations and collectstatic
 RUN python picokart/manage.py makemigrations \
     && python picokart/manage.py migrate \
-    && python picokart/manage.py collectstatic --noinput
+    && python picokart/manage.py collectstatic
 
 # Command to run Django's development server
 CMD ["python", "picokart/manage.py", "runserver", "0.0.0.0:8000"]
