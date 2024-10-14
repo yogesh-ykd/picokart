@@ -11,17 +11,26 @@
     {% with "css-v0.0.1" as css_version %}
     {% with 'css/'|add:css_version|add:'/base.css' as base %}
     {% with 'css/'|add:css_version|add:'/home.css' as home %}
+    {% with 'css/'|add:css_version|add:'/header.css' as header %}
+    {% with 'css/'|add:css_version|add:'/footer.css' as footer %}
     
+    
+    <link rel="stylesheet" type="text/css" href="{% static base %}" />
+    <link rel="stylesheet" type="text/css" href="{% static header %}" />
+    <link rel="stylesheet" type="text/css" href="{% static footer %}" />
     {% block css %}
-
     {% endblock css %}
-    
+
+    {% endwith %}
+    {% endwith %}
     {% endwith %}
     {% endwith %}
     {% endwith %}
 </head>
 
 <body>
+    {% include 'header.html' %}
     {% block main %}
     {% endblock main %}
+    {% include 'footer.html' %}
 </body>
