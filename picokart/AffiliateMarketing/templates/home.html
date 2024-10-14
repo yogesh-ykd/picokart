@@ -7,18 +7,18 @@
 {% endblock css %}
 
 {% block main %}
-<!-- Banner Section -->
-<section class="Banner" style="background: url('{% static "images/home-banner-1.png" %}');">
-  <div class="Banner-content">
+<!-- banner Section -->
+<section class="banner grid-divisions" style="background: url('{% static "images/home-banner-1.png" %}');">
+  <div class="banner-content">
     <h1>Get 15% off your Mobile Phone orders!</h1>
     <p>Non enim eu excepteur cupidatat consectetur do ea est reprehenderit incididunt irure veniam cupidatat est non
       amet.</p>
-    <div class="Banner-buttons">
+    <div class="banner-buttons">
       <a href="#" class="btn primary" aria-label="Shop now and get discounts">Get now</a>
       <a href="#" class="btn secondary" aria-label="Learn more about the offers">Learn more</a>
     </div>
   </div>
-  <!-- <div class="Banner-image">
+  <!-- <div class="banner-image">
     <img src="assests/Screenshot 2024-09-29 at 11.42.10 PM.png" alt="Shopping cart with bags" loading="lazy">
   </div> -->
 </section>
@@ -37,19 +37,19 @@
     <!-- Cards Section -->
     <div class="sale-cards">
       <div class="sale-card">
-        <img src="assests/sale/Screenshot 2024-10-01 at 2.30.16 PM copy 2.png" alt="Product 1">
+        <img src="{% static 'images/sample_categories/sample-c1.png' %}" alt="Product 1">
         <div class="card-label">Sunglasses <span class="label-icon">⬤</span></div>
       </div>
       <div class="sale-card">
-        <img src="assests/sale/Screenshot 2024-10-01 at 2.30.16 PM copy.png" alt="Product 2">
+        <img src="{% static 'images/sample_categories/sample-c2.png' %}" alt="Product 2">
         <div class="card-label">Sunglasses <span class="label-icon">⬤</span></div>
       </div>
       <div class="sale-card">
-        <img src="assests/sale/Screenshot 2024-10-01 at 2.30.16 PM.png" alt="Product 3">
+        <img src="{% static 'images/sample_categories/sample-c3.png' %}" alt="Product 3">
         <div class="card-label">Sunglasses <span class="label-icon">⬤</span></div>
       </div>
       <div class="sale-card">
-        <img src="assests/sale/Screenshot 2024-10-01 at 2.30.16 PM copy 3.png" alt="Product 4">
+        <img src="{% static 'images/sample_categories/sample-c4.png' %}" alt="Product 4">
         <div class="card-label">Sunglasses <span class="label-icon">⬤</span></div>
       </div>
     </div>
@@ -62,7 +62,7 @@
     <h2 id="trending-heading">Trending Mobile Phones</h2>
     <div class="trending-content">
       <article class="product">
-        <img src="assests/trending/Screenshot 2024-10-01 at 1.45.00 PM.png" alt="Product title">
+        <img src="{% static 'images/sample_products/sample-p1.png' %}" alt="Product title">
         <div class="wishlist-icon">❤</div> <!-- Wishlist Heart Icon -->
         <h3>Product title</h3>
         <p>$230</p>
@@ -72,7 +72,7 @@
       </article>
 
       <article class="product">
-        <img src="assests/trending/Screenshot 2024-10-01 at 1.45.00 PM.png" alt="Product title">
+        <img src="{% static 'images/sample_products/sample-p2.png' %}" alt="Product title">
         <div class="wishlist-icon">❤</div> <!-- Wishlist Heart Icon -->
         <h3>Product title</h3>
         <p>$230</p>
@@ -82,7 +82,7 @@
       </article>
 
       <article class="product">
-        <img src="assests/trending/Screenshot 2024-10-01 at 1.45.00 PM.png" alt="Product title">
+        <img src="{% static 'images/sample_products/sample-p3.png' %}" alt="Product title">
         <div class="wishlist-icon">❤</div> <!-- Wishlist Heart Icon -->
         <h3>Product title</h3>
         <p>$230</p>
@@ -92,7 +92,7 @@
       </article>
 
       <article class="product">
-        <img src="assests/trending/Screenshot 2024-10-01 at 1.45.00 PM.png" alt="Product title">
+        <img src="{% static 'images/sample_products/sample-p4.png' %}" alt="Product title">
         <div class="wishlist-icon">❤</div> <!-- Wishlist Heart Icon -->
         <h3>Product title</h3>
         <p>$230</p>
@@ -113,7 +113,7 @@
     <div class="best-sellers-content">
 
       <article class="product">
-        <img src="assests/category1/Screenshot 2024-10-01 at 1.52.41 PM.png" alt="Product title">
+        <img src="{% static 'images/sample_products/sample-p5.png' %}" alt="Product title">
         <div class="wishlist-icon">❤</div> <!-- Wishlist Heart Icon -->
         <h3>Product title</h3>
         <p>$230</p>
@@ -125,20 +125,7 @@
       </article>
 
       <article class="product">
-        <img src="assests/category1/Screenshot 2024-10-01 at 1.52.47 PM.png" alt="Product title">
-        <div class="wishlist-icon">❤</div> <!-- Wishlist Heart Icon -->
-        <h3>Product title</h3>
-        <p>$230</p>
-        <div class="stars">⭐⭐⭐⭐⭐</div>
-        <div class="reviews-sold-container">
-          <div class="reviews">4.5 (99 reviews)</div>
-          <div class="items-sold">360 items sold</div>
-        </div>
-      </article>
-
-
-      <article class="product">
-        <img src="assests/category1/Screenshot 2024-10-01 at 1.52.53 PM.png" alt="Product title">
+        <img src="{% static 'images/sample_products/sample-p6.png' %}" alt="Product title">
         <div class="wishlist-icon">❤</div> <!-- Wishlist Heart Icon -->
         <h3>Product title</h3>
         <p>$230</p>
@@ -151,40 +138,7 @@
 
 
       <article class="product">
-        <img src="assests/category1/Screenshot 2024-10-01 at 1.52.58 PM.png" alt="Product title">
-        <div class="wishlist-icon">❤</div> <!-- Wishlist Heart Icon -->
-        <h3>Product title</h3>
-        <p>$230</p>
-        <div class="stars">⭐⭐⭐⭐⭐</div>
-        <div class="reviews-sold-container">
-          <div class="reviews">4.5 (99 reviews)</div>
-          <div class="items-sold">360 items sold</div>
-        </div>
-      </article>
-
-
-      <!-- Repeat for each product -->
-    </div>
-  </div>
-
-  <div class="container">
-    <h2 id="best-sellers-heading">Best Sellers in <span>Category 1</span></h2>
-    <div class="best-sellers-content">
-
-      <article class="product">
-        <img src="assests/category1/Screenshot 2024-10-01 at 1.52.41 PM.png" alt="Product title">
-        <div class="wishlist-icon">❤</div> <!-- Wishlist Heart Icon -->
-        <h3>Product title</h3>
-        <p>$230</p>
-        <div class="stars">⭐⭐⭐⭐⭐</div>
-        <div class="reviews-sold-container">
-          <div class="reviews">4.5 (99 reviews)</div>
-          <div class="items-sold">360 items sold</div>
-        </div>
-      </article>
-
-      <article class="product">
-        <img src="assests/category1/Screenshot 2024-10-01 at 1.52.47 PM.png" alt="Product title">
+        <img src="{% static 'images/sample_products/sample-p7.png' %}" alt="Product title">
         <div class="wishlist-icon">❤</div> <!-- Wishlist Heart Icon -->
         <h3>Product title</h3>
         <p>$230</p>
@@ -197,20 +151,7 @@
 
 
       <article class="product">
-        <img src="assests/category1/Screenshot 2024-10-01 at 1.52.53 PM.png" alt="Product title">
-        <div class="wishlist-icon">❤</div> <!-- Wishlist Heart Icon -->
-        <h3>Product title</h3>
-        <p>$230</p>
-        <div class="stars">⭐⭐⭐⭐⭐</div>
-        <div class="reviews-sold-container">
-          <div class="reviews">4.5 (99 reviews)</div>
-          <div class="items-sold">360 items sold</div>
-        </div>
-      </article>
-
-
-      <article class="product">
-        <img src="assests/category1/Screenshot 2024-10-01 at 1.52.58 PM.png" alt="Product title">
+        <img src="{% static 'images/sample_products/sample-p8.png' %}" alt="Product title">
         <div class="wishlist-icon">❤</div> <!-- Wishlist Heart Icon -->
         <h3>Product title</h3>
         <p>$230</p>
@@ -231,7 +172,7 @@
     <div class="best-sellers-content">
 
       <article class="product">
-        <img src="assests/category1/Screenshot 2024-10-01 at 1.52.41 PM.png" alt="Product title">
+        <img src="{% static 'images/sample_products/sample-p9.png' %}" alt="Product title">
         <div class="wishlist-icon">❤</div> <!-- Wishlist Heart Icon -->
         <h3>Product title</h3>
         <p>$230</p>
@@ -243,20 +184,7 @@
       </article>
 
       <article class="product">
-        <img src="assests/category1/Screenshot 2024-10-01 at 1.52.47 PM.png" alt="Product title">
-        <div class="wishlist-icon">❤</div> <!-- Wishlist Heart Icon -->
-        <h3>Product title</h3>
-        <p>$230</p>
-        <div class="stars">⭐⭐⭐⭐⭐</div>
-        <div class="reviews-sold-container">
-          <div class="reviews">4.5 (99 reviews)</div>
-          <div class="items-sold">360 items sold</div>
-        </div>
-      </article>
-
-
-      <article class="product">
-        <img src="assests/category1/Screenshot 2024-10-01 at 1.52.53 PM.png" alt="Product title">
+        <img src="{% static 'images/sample_products/sample-p10.png' %}" alt="Product title">
         <div class="wishlist-icon">❤</div> <!-- Wishlist Heart Icon -->
         <h3>Product title</h3>
         <p>$230</p>
@@ -269,7 +197,79 @@
 
 
       <article class="product">
-        <img src="assests/category1/Screenshot 2024-10-01 at 1.52.58 PM.png" alt="Product title">
+        <img src="{% static 'images/sample_products/sample-p11.png' %}" alt="Product title">
+        <div class="wishlist-icon">❤</div> <!-- Wishlist Heart Icon -->
+        <h3>Product title</h3>
+        <p>$230</p>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <div class="reviews-sold-container">
+          <div class="reviews">4.5 (99 reviews)</div>
+          <div class="items-sold">360 items sold</div>
+        </div>
+      </article>
+
+
+      <article class="product">
+        <img src="{% static 'images/sample_products/sample-p12.png' %}" alt="Product title">
+        <div class="wishlist-icon">❤</div> <!-- Wishlist Heart Icon -->
+        <h3>Product title</h3>
+        <p>$230</p>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <div class="reviews-sold-container">
+          <div class="reviews">4.5 (99 reviews)</div>
+          <div class="items-sold">360 items sold</div>
+        </div>
+      </article>
+
+
+      <!-- Repeat for each product -->
+    </div>
+  </div>
+
+  <div class="container">
+    <h2 id="best-sellers-heading">Best Sellers in <span>Category 1</span></h2>
+    <div class="best-sellers-content">
+
+      <article class="product">
+        <img src="{% static 'images/sample_products/sample-p13.png' %}" alt="Product title">
+        <div class="wishlist-icon">❤</div> <!-- Wishlist Heart Icon -->
+        <h3>Product title</h3>
+        <p>$230</p>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <div class="reviews-sold-container">
+          <div class="reviews">4.5 (99 reviews)</div>
+          <div class="items-sold">360 items sold</div>
+        </div>
+      </article>
+
+      <article class="product">
+        <img src="{% static 'images/sample_products/sample-p14.png' %}" alt="Product title">
+        <div class="wishlist-icon">❤</div> <!-- Wishlist Heart Icon -->
+        <h3>Product title</h3>
+        <p>$230</p>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <div class="reviews-sold-container">
+          <div class="reviews">4.5 (99 reviews)</div>
+          <div class="items-sold">360 items sold</div>
+        </div>
+      </article>
+
+
+      <article class="product">
+        <img src="{% static 'images/sample_products/sample-p15.png' %}" alt="Product title">
+        <div class="wishlist-icon">❤</div> <!-- Wishlist Heart Icon -->
+        <h3>Product title</h3>
+        <p>$230</p>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <div class="reviews-sold-container">
+          <div class="reviews">4.5 (99 reviews)</div>
+          <div class="items-sold">360 items sold</div>
+        </div>
+      </article>
+
+
+      <article class="product">
+        <img src="{% static 'images/sample_products/sample-p16.png' %}" alt="Product title">
         <div class="wishlist-icon">❤</div> <!-- Wishlist Heart Icon -->
         <h3>Product title</h3>
         <p>$230</p>
