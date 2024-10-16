@@ -25,5 +25,7 @@ COPY . /app/
 # Expose the port Django will run on
 EXPOSE 8000
 
+RUN python picokart/manage.py collectstatic --noinput
+
 # Command to run Django's development server
 CMD ["python", "picokart/manage.py", "runserver", "0.0.0.0:8000"]
